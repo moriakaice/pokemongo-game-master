@@ -6097,18 +6097,6 @@
       "dropTrainerLevel": 100
     }
   }, {
-    "templateId": "ITEM_STAR_PIECE",
-    "itemSettings": {
-      "itemId": "ITEM_STAR_PIECE",
-      "itemType": "ITEM_TYPE_STARDUST_BOOST",
-      "category": "ITEM_CATEGORY_STARDUST_BOOST",
-      "dropTrainerLevel": 100,
-      "stardustBoost": {
-        "stardustMultiplier": 1.5,
-        "boostDurationMs": 1800000
-      }
-    }
-  }, {
     "templateId": "ITEM_SUN_STONE",
     "itemSettings": {
       "itemId": "ITEM_SUN_STONE",
@@ -10254,7 +10242,6 @@
         "collisionHeadRadiusM": 0.153,
         "movementType": "MOVEMENT_JUMP",
         "movementTimerS": 10.0,
-        "jumpTimeS": 1.0,
         "attackTimerS": 29.0,
         "attackProbability": 0.1,
         "dodgeProbability": 0.15,
@@ -10307,6 +10294,7 @@
         "collisionHeightM": 0.6435,
         "collisionHeadRadiusM": 0.1755,
         "movementTimerS": 3600.0,
+        "jumpTimeS": 1.0,
         "attackTimerS": 3600.0,
         "bonusCandyCaptureReward": 2,
         "bonusStardustCaptureReward": 200,
@@ -23693,7 +23681,7 @@
         "baseAttack": 128,
         "baseDefense": 90
       },
-      "quickMoves": ["PRESENT_FAST"],
+      "quickMoves": ["ICE_SHARD_FAST", "QUICK_ATTACK_FAST"],
       "cinematicMoves": ["ICE_PUNCH", "ICY_WIND", "AERIAL_ACE"],
       "animationTime": [1.3333, 0.6667, 1.6667, 2.0, 0.0, 2.0, 3.0, 3.0],
       "evolutionPips": 1,
@@ -25892,7 +25880,7 @@
         "baseDefense": 141
       },
       "quickMoves": ["COUNTER_FAST", "FIRE_SPIN_FAST"],
-      "cinematicMoves": ["FOCUS_BLAST", "OVERHEAT", "BRAVE_BIRD"],
+      "cinematicMoves": ["STONE_EDGE", "OVERHEAT", "BRAVE_BIRD"],
       "animationTime": [1.3333, 0.6667, 1.6667, 2.0, 0.0, 2.0, 3.0, 3.0],
       "evolutionPips": 1,
       "pokedexHeightM": 1.91,
@@ -28230,7 +28218,7 @@
       "staminaLossScalar": 0.01,
       "trainerLevelMin": 1,
       "trainerLevelMax": 100,
-      "vfxName": "present_fast",
+      "vfxName": "present",
       "durationMs": 1300,
       "damageWindowStartMs": 1100,
       "damageWindowEndMs": 1300,
@@ -29323,7 +29311,7 @@
       "type": "POKEMON_TYPE_ELECTRIC",
       "camera": {
         "diskRadiusM": 0.555,
-        "cylinderRadiusM": 0.3,
+        "cylinderRadiusM": 1.0,
         "cylinderHeightM": 0.4,
         "shoulderModeScale": 0.5
       },
@@ -32933,7 +32921,7 @@
         "baseAttack": 270,
         "baseDefense": 251
       },
-      "quickMoves": ["WATERFALL_FAST"],
+      "quickMoves": ["WATERFALL_FAST", "DRAGON_TAIL_FAST"],
       "cinematicMoves": ["HYDRO_PUMP", "BLIZZARD", "THUNDER"],
       "animationTime": [1.3333, 0.6667, 1.6667, 2.0, 0.0, 2.0, 3.0, 3.0],
       "evolutionPips": 1,
@@ -40485,5 +40473,5 @@
       "sequence": ["anim attacker atk-move", "vfx zen_headbutt_fast", "wait 0.40", "sfx attacker 442-0_iron_head", "wait 0.25", "sys ui-sync", "sys complete"]
     }
   }],
-  "timestampMs": "1515113899660"
+  "timestampMs": "1512783757581"
 }
